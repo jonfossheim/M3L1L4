@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fonts</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="fontstyles.css" />
+  </head>
+  <body>
+    <h1>This is Base Standard Font</h1>
+    <div>
+      <h3 class="montserrat">This is Montserrat from Google Fonts</h3>
+      <input
+        type="range"
+        value="16"
+        min="16"
+        max="125"
+        oninput="(this.previousElementSibling.style.fontSize = this.value + 'px')"
+      />
+    </div>
+
+    <div>
+      <h3 class="roboto">This is Roboto from my Server</h3>
+      <input
+        type="range"
+        value="16"
+        min="16"
+        max="125"
+        oninput="(this.previousElementSibling.style.fontSize = this.value + 'px')"
+      />
+    </div>
+    <div>
+      <label>Demo</label>
+      <input
+        type="range"
+        value="16"
+        min="16"
+        max="125"
+        oninput="this.nextElementSibling.value = this.value"
+      />
+      <output>16</output>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
